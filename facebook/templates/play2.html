@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+<body>
+
+    {{ name }}은 내 이름이다.
+    <br>
+    {{ count }}번 째 방문자 당첨!
+    <br>
+    당신은 {{ status }}이다.
+
+    <h2>오늘은 무엇을 했던가</h2>
+    {% for post in diary %}
+    <h4>{{ post }}</h4>
+    이건 무한반복
+    {% endfor %}
+
+
+</body>
+</html>
